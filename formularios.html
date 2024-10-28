@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<body>
-    <form>
-			<input type="text" name="Nome" placeholder="Enter your name"/><br>
-            <input type="text" name="Email" placeholder="Enter your last name" /><br>
-            <input type="password" name="Password" placeholder="Enter your password" /><br>
-            <input type="tel" name="Phone" placeholder="Enter your phone" /><br>
-            <input type="date"></br>
-            <input type="adress" name="morada" placeholder="Enter your adress"></br>
-            <input type="submit" name="button"></br>
-	</form>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<form>
+			<label for="name">Nome: <input type="text" id="name" name="Nome" placeholder="Enter your name" /> </label><br />
 
+			<label for="lastname">Último Nome: <input type="text" id="lastname" name="Lastname" placeholder="Enter your last name" /> </label><br />
 
-</body>
+			<label for="password">Password: <input type="password" id="password" name="Password" placeholder="Enter your password" /> </label><br />
 
+			<label for="phone">Telefone: <input type="tel" id="phone" name="Phone" placeholder="Enter your phone" /> </label><br />
+
+			<label for="date">Data: <input type="date" id="date" name="date" /> </label><br />
+
+			<label for="address">Morada: <input type="text" id="address" name="morada" placeholder="Enter your address" /> </label><br />
+
+			<input type="submit" value="Enviar" />
+		</form>
+	</body>
 </html>
