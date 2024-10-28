@@ -6,16 +6,16 @@
 		<title>Formulários</title>
 	</head>
 	<body>
-		<h1>este é o exercicio de formulários</h1>
+		<h1>Este é o exercicio de formulários</h1>
 		<form action="">
 			<label for="primeiro-nome">Nome:</label><br />
-			<input type="text" name="primeiro-nome" placeholder="Zé" id="primeiro-nome" /><br />
+			<input type="text" name="primeiro-nome" placeholder="Zé" id="primeiro-nome" required /><br />
 
 			<label for="o-teu-email">E-mail:</label><br />
-			<input type="mail" name="E-mail" placeholder="mail@mail.pt" id="o-teu-email" /><br />
+			<input type="mail" name="E-mail" placeholder="mail@mail.pt" id="o-teu-email" required /><br />
 
 			<label for="password">Pass:</label><br />
-			<input type="password" name="senha" placeholder="rhFStsmnka13#" /><br />
+			<input type="password" name="senha" placeholder="Ex: rhFStsmnka13#" /><br />
 
 			<label for="numero-de-telemóvel">Telemóvel:</label><br />
 			<input type="tel" name="Telemóvel" placeholder="912345678" id="numero-de-telemóvel" /><br />
@@ -26,7 +26,25 @@
 			<label for="Morada_do_clt">Morada:</label><br />
 			<input type="text" name="Morada" placeholder="Ex:rua que sobe nº 10 no 1º andar cp 1233-444" id="Morada_do_clt" /><br />
 
-			<input type="submit" /><br />
+			<label for="textarea-message">Message:</label><br />
+			<textarea name="message" id="textarea-message" cols="30" rows="10"></textarea><br />
+
+			<label for="contribuinte">NIF</label><br />
+			<input type="text" name="NIF" id="contribuinte"  minlength="9" maxlength="9" required/><br />
+
+			<label for="select-cars">Cars</label><br />
+			<select name="cars" id="select-cars">
+				<option value="Lexus">Lexus</option>
+				<option value="Mercedes">Mercedes</option>
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+			</select>
+			<!--quando quero que seja de preenchimento obrigatório colocar required-->
+			<!--posso colocar o atributo checked se quiser que o radiobutton ja esteja selecionado-->
+			<!--disabled faz com que o campo estejas desligado-->
+
+            <input type="submit" value="Submit" />
+
 		</form>
 	</body>
 </html>
