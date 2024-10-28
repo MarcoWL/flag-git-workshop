@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!---->
     <form action="">
         <input type="button" value="Button"> <br>
         <input type="color" name="" id=""> <br>
@@ -15,14 +16,22 @@
         <input type="datetime-local" name="" id=""> <br>
         <input type="email" name="" id=""> <br>
         <!--verifica se tem um @ dentro do input e influencia os campos do teclado do tell-->
-        <input type="submit"> <br>
+        <input type="submit">
+    </form>
 
-        <input type="radio" name="clube" value="Benfica" />Benfica<br>
-        <input type="radio" name="clube" value="Porto" />Porto<br>
+    <br>
+
+    <!--radio com disabled checked-->
+    <form action="">
+        <input type="radio" name="clube" value="Benfica" checked />Benfica<br>
+        <input type="radio" name="clube" value="Porto" disabled />Porto<br>
         <input type="radio" name="clube" value="Sporting" />Sporting<br>
         <input type="submit" value="Enviar">
     </form>
 
+    <br>
+
+    <!--label para input-->
     <form action="">
         <label for="name">Name:</label>
         <input type="text" name="Name" id="name"> <br>
@@ -49,6 +58,40 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+    <br>
+
+    <!--select-->
+    <form action="">
+        <label for="select-cars">Choose a car:</label>
+        <select name="cars" id="select-cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+    </form>
+
+    <br>
+
+    <!--require-->
+    <form action="">
+        <label for="fname">Nome:</label>
+        <input type="text" name="first-name" id="fname" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+
+    <!--minlength maxlength-->
+    <form action="">
+        <label for="nif">NIF:</label>
+        <input type="text" name="nif" id="nif" minlength="9" maxlength="9" required>
+        <input type="submit" value="Enviar">
+    </form>
+
 
 </body>
 
