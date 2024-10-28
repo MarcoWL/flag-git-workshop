@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<form>
+			<p>
+				<label for="name">Nome: <input type="text" id="name" name="Nome" placeholder="Enter your name" required /> </label>
+			</p>
+
+			<label for="lastname">Último Nome: <input type="text" id="lastname" name="Lastname" placeholder="Enter your last name" /> </label><br />
+
+			<label for="password">Password: <input type="password" id="password" name="Password" placeholder="Enter your password" /> </label><br />
+
+			<label for="phone">Telefone: <input type="tel" id="phone" name="Phone" placeholder="Enter your phone" /> </label><br />
+
+			<label for="date">Data: <input type="date" id="date" name="date" /> </label><br />
+
+			<label for="address">Morada: <input type="text" id="address" name="morada" placeholder="Enter your address" /> </label><br />
+
+			<label for="textarea-mensage">Mensagem: <textarea name="textarea-mensage" id="textarea-mensage" cols="30" rows="10" disabled></textarea></label><br />
+
+			<label for="select-clube">Clube: </label>
+			<select id="select-clube" name="clube">
+				<option value="Porto">Porto</option>
+				<option value="Benfica">Benfica</option>
+				<option value="Sporting">Sporting</option>
+				<option value="Braga">Braga</option>
+			</select>
+			<br />
+
+			<label for="contribuinte"
+				>NIF:
+				<input type="text" name="nif" id="contribuinte" required pattern="\d{9}" title="Coloque 9-Digitos do NIF" />
+			</label>
+
+			<input type="submit" value="Enviar" />
+		</form>
+	</body>
+</html>
