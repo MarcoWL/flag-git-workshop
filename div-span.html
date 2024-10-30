@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, Span e HTML5</title>
+</head>
+
+<body>
+    <!--id="só um elemento com o nome" & class="mais de um elemento pode ter o mesmo nome"-->
+    <div id="id-unico">
+
+    </div>
+
+    <div class="class1 class2 class3">
+
+    </div>
+
+    <!--span permite adicionar outra funcionalidade/estilização em uma parte do texto -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, exercitationem? Eveniet vel rerum maiores id
+        incidunt, praesentium eius cumque nesciunt <span>nostrum labore ipsa. Odit, ullam consequuntur? Excepturio
+        </span>nostrum labore ipsa. Odit, ullam consequuntur? Excepturi, ipsa velit, cupiditate odio sed laboriosam
+        atque beatae saepe suscipit amet sint quaerat? Iste inventore alias ab! Quos esse et tempora maxime amet!</p>
+
+    <!--HTML5
+    <header> <nav> <main> <section> <article> <aside> <footer>-->
+
+    <header>
+        <div class="">
+            <img src="" alt="">
+            <h1>Título</h1>
+        </div>
+        <div class="">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <img src="" alt="">
+
+            <div id=""></div>
+
+        </article>
+
+        <section>
+            <div class="">
+
+            </div>
+            <div class="">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- <adress> <time> 
+        <metter> = medição percentual
+        <progress> = progreção -->
+
+    <label for="meter">Meter:</label>
+    <meter id="meter" min="0" value="40" max="100"></meter>
+
+    <br>
+
+    <label for="progress">Progress:</label>
+    <progress id="progress" value=".7" max="1">70%</progress>
+
+    <!--picture-->
+    <picture>
+        <source media="(min-with:650px)" srcset="img_pinck.jpg">
+        <source media="(min-with:465px)" srcset="img_wihite.jpg">
+        <img src="img_orange.jpg" alt="" style="width:auto;">
+    </picture>
+
+    <!--ARIA aplicações na internet ricas em acessibilidade-->
+    <!--tabindex permite navegarmos entre elementos apenas ao clicar na tecla tab-->
+    <div tabindex="1">w3School</div><br>
+    <div tabindex="2"> outro-site </div><br>
+    <div tabindex="3"> mais-outro-site </div><br>
+
+</body>
+
+</html>
