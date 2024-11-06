@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulários</title>
+	</head>
+	<body>
+		<form action="">
+			<p>
+				<label for="fname">Nome</label><br />
+				<input type="text" name="nome" id="fname" required />
+			</p>
+			<p>
+				<input type="radio" name="clube" id="clube-benfica" value="Benfica" disabled />
+				<label for="clube-benfica">Benfica</label>
+			</p>
+
+			<p>
+				<input type="radio" name="clube" id="clube-porto" value="Porto" />
+				<label for="clube-porto">Porto</label>
+			</p>
+
+			<p>
+				<input type="radio" name="clube" id="clube-sporting" value="Sporting" checked />
+				<label for="clube-sporting">Sporting</label>
+			</p>
+
+			<p>
+				<input type="radio" name="clube" id="clube-outro" value="Outro" />
+				<label for="clube-outro">outro</label>
+			</p>
+
+			<p>
+				<label for="contribuinte">NIF:</label><br />
+				<input type="text" name="nif" id="contribuinte" minlength="9" maxlength="9" />
+			</p>
+
+			<label for="textarea-message">Message:</label><br />
+			<textarea name="message" id="textarea-message" cols="50" rows="4" minlength="2"></textarea>
+			<br />
+
+			<label for="select-cars">Cars:</label><br />
+			<select name="car" id="select-cars">
+				<option value="ferrari">Ferrari</option>
+				<option value="porshe">Porshe</option>
+				<option value="lamborghini">Lamborghini</option>
+				<option value="fiat">Fiat</option>
+			</select>
+			<br />
+			<input type="submit" /><br />
+
+			<button type="submit">
+				<img src="/exercicio-images/flag.png" alt="" />
+				Isto é o meu submit button
+			</button>
+		</form>
+	</body>
+</html>
