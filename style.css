@@ -1,3 +1,9 @@
-html {
-	font-size: 16px;
+.card {
+	background-color: pink;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.card h3 + p {
+	margin-top: 100px;
 }
