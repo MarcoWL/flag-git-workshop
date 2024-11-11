@@ -1,9 +1,15 @@
-.card {
-	background-color: pink;
-	padding: 20px;
-	border-radius: 10px;
+body {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
 }
 
-.card h3 + p {
-	margin-top: 100px;
+h1,
+p {
+	margin: 0;
+	margin-top: 1rem;
+	background: #D3C;
 }
+
+
+
