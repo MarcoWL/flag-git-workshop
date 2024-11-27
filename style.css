@@ -1,3 +1,25 @@
-html {
-	font-size: 16px;
+.menu {
+  background: red;
+  border: 1px solid black;
 }
+section .menu {
+  background: white;
+}
+
+.hero {
+  background: red;
+  border: 1px solid black;
+}
+section .hero {
+  background: white;
+}
+
+.card {
+  background: red;
+  border: 1px solid black;
+}
+section .card {
+  background: white;
+}
+
+/*# sourceMappingURL=style.css.map */
