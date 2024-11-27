@@ -61,14 +61,18 @@ h1 {
 	gap: 1rem;
 }
 
+.box::before {
+	content: 'prefixo';
+}
+
 .inner {
 	background-color: pink;
 	border: 1px solid black;
 	padding: 5px;
 }
 
-.inner + .inner {
-	background-color: yellow;
+.inner:nth-child(3n + 1) {
+	background-color: green;
 }
 
 .star {
@@ -88,6 +92,6 @@ h1 {
 	top: 0;
 }
 
-.triangle:nth-child(2) {
+.triangle:nth-child(3n) {
 	transform: rotate(180deg) translateY(-71%);
 }
