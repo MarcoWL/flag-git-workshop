@@ -1,3 +1,5 @@
+$size: 100px;
+
 .menu {
 	background: red;
 	border: 1px solid black;
@@ -5,4 +7,9 @@
 	section & {
 		background: white;
 	}
+
+    &__item {
+        width: calc(100vw - 200px);
+        height: calc(100vh - 200px);
+    }
 }

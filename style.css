@@ -1,9 +1,42 @@
+.square {
+  background-color: blue;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
+.square-large {
+  background-color: red;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.square-small {
+  background-color: green;
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
+
+.square-yellow {
+  background-color: yellow;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
 .menu {
   background: red;
   border: 1px solid black;
 }
 section .menu {
   background: white;
+}
+.menu__item {
+  width: calc(100vw - 200px);
+  height: calc(100vh - 200px);
 }
 
 .hero {

@@ -1,0 +1,27 @@
+@mixin square($size:100px, $color: blue, $rounded:false) {
+  background-color: $color;
+  height: $size;
+  margin: 10px;
+  width: $size;
+
+  @if $size > 100px and $size < 200px {
+    border-radius: 25px;
+  }
+}
+
+.square {
+    @include square();
+}
+
+.square-large {
+     @include square(150px, red, true);
+}
+
+.square-small {
+     @include square(50px, green);
+}
+
+
+.square-yellow {
+    @include square( $color: yellow );
+}
