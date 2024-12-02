@@ -1,0 +1,31 @@
+%unstyled-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.features {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&-list {
+		@extend %unstyled-list;
+		display: flex;
+		flex-direction: column;
+		gap: 5.75rem;
+		max-width: 24rem;
+		flex: 1 0 20%;
+
+		&:first-child {
+			text-align: right;
+		}
+
+		&__item {
+			display: flex;
+			align-items: start;
+		}
+	}
+}

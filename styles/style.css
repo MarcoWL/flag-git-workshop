@@ -1,14 +1,50 @@
-
-
-.sticky-container {
-    border: 2px solid red;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-
-.sticky {
-    position: sticky;
-    top: 10px;
-    background-color: gray;
+body {
+  margin: 0;
+  padding: 0;
 }
 
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5.75rem;
+  max-width: 24rem;
+  flex: 1 0 20%;
+}
+.features-list:first-child {
+  text-align: right;
+}
+.features-list__item {
+  display: flex;
+  align-items: start;
+}
+
+/*# sourceMappingURL=style.css.map */
