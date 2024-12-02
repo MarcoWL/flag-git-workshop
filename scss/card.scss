@@ -1,8 +1,12 @@
+$primary-color: red;
+@use 'sass:color';
+
 .card {
 	background: red;
 	border: 1px solid black;
 
 	section & {
 		background: white;
+		color: color.adjust($primary-color, $lightness: -20%);
 	}
 }

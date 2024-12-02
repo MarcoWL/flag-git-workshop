@@ -1,58 +1,16 @@
-.square {
-  background-color: blue;
-  height: 100px;
-  margin: 10px;
-  width: 100px;
+.wrap p {
+  padding: 10px;
+  margin: 20px;
 }
 
-.square-large {
-  background-color: red;
-  height: 150px;
-  margin: 10px;
-  width: 150px;
-  border-radius: 25px;
+.p-border {
+  border: dotted 3px #081b68;
 }
-
-.square-small {
-  background-color: green;
-  height: 50px;
-  margin: 10px;
-  width: 50px;
+.p-background {
+  background: transp;
 }
-
-.square-yellow {
-  background-color: yellow;
-  height: 100px;
-  margin: 10px;
-  width: 100px;
-}
-
-.menu {
-  background: red;
-  border: 1px solid black;
-}
-section .menu {
-  background: white;
-}
-.menu__item {
-  width: calc(100vw - 200px);
-  height: calc(100vh - 200px);
-}
-
-.hero {
-  background: red;
-  border: 1px solid black;
-}
-section .hero {
-  background: white;
-}
-
-.card {
-  background: red;
-  border: 1px solid black;
-}
-section .card {
-  background: white;
+.p-color {
+  color: #081b68;
 }
 
 /*# sourceMappingURL=style.css.map */

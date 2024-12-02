@@ -1,0 +1,22 @@
+.wrap {
+	p {
+		padding: 10px;
+		margin: 20px;
+	}
+}
+
+$primary-color: #081b68;
+
+.p {
+	&-border {
+		border: dotted 3px $primary-color;
+	}
+
+	&-background {
+		background:transp;
+	}
+
+	&-color {
+		color: $primary-color;
+	}
+}
