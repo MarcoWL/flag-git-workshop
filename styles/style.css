@@ -1,0 +1,14 @@
+
+
+.sticky-container {
+    border: 2px solid red;
+    position: relative;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: gray;
+}
+
