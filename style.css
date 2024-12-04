@@ -13,4 +13,9 @@
   color: #081b68;
 }
 
+body {
+  background-color: lightblue;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 /*# sourceMappingURL=style.css.map */
