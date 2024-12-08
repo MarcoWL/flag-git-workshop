@@ -47,4 +47,84 @@ svg {
   align-items: start;
 }
 
+.section--blue {
+  background: linear-gradient(to right, #22a9d7, #165ca2);
+  gap: 2rem;
+}
+.section--blue h2 {
+  padding: 3rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1 1 auto;
+}
+
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.person img {
+  max-width: 340px;
+}
+.person__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 330px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+  text-align: center;
+}
+.person__name {
+  text-transform: uppercase;
+  color: #165ca2;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+.person__role {
+  text-transform: uppercase;
+  color: #22a9d7;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 0.3rem;
+  margin-bottom: 1rem;
+}
+.person ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.person__traits {
+  text-transform: capitalize;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+.person .social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

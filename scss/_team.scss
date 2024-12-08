@@ -1,0 +1,90 @@
+$primary-color: #165ca2;
+$secondary-color: #22a9d7;
+$title-font: 'Maven Pro', sans-serif;
+$text-font: 'Open Sans', sans-serif;
+
+.section--blue {
+	background: linear-gradient(to right, $secondary-color, $primary-color);
+	gap: 2rem;
+
+	& h2 {
+		padding: 3rem;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.5rem;
+	}
+}
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding: 2rem;
+	flex: 1 1 auto;
+}
+
+.person {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		max-width: 340px;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		max-width: 330px;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		margin-top: -15px;
+		text-align: center;
+	}
+
+	&__name {
+		text-transform: uppercase;
+		color: $primary-color;
+		font-family: $title-font;
+		font-weight: 500;
+		font-size: 1rem;
+		margin: 0;
+	}
+
+	&__role {
+		text-transform: uppercase;
+		color: $secondary-color;
+		font-family: $title-font;
+		font-weight: 500;
+		font-size: 0.8rem;
+		margin: 0.3rem;
+        margin-bottom: 1rem;
+	}
+	& ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__traits {
+        text-transform: capitalize;
+		padding: 2rem;
+		font-family: $text-font;
+		font-size: 0.75rem;
+		line-height: 1.5rem;
+	}
+
+	.social {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+}
