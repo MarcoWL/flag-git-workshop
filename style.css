@@ -37,10 +37,135 @@ h6 {
   color: #fff;
   cursor: pointer;
   display: inline-block;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   padding: 0.75rem 2rem;
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+.button:hover {
+  background-color: transparent;
+  color: #ff7800;
+}
+.button--invert {
+  background-color: transparent;
+  border-color: #727272;
+  color: #ff7800;
+}
+.button--invert:hover {
+  background-color: #727272;
+  color: #fff;
+}
+
+.site-header {
+  background-color: #0e1111;
+  padding: 1.25rem 2rem;
+}
+.site-header .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.site-header .button {
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
+.main-nav__list {
+  align-items: center;
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__list a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (width >= 700px) {
+  .site-header .button {
+    display: inline-block;
+  }
+}
+@media screen and (width >= 1200px) {
+  .main-nav {
+    display: block;
+  }
+  .site-header .hamburger-menu {
+    display: none;
+  }
+}
+.hero {
+  align-items: center;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(123, 41, 121, 0.45)), url("/assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 24.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.hero__title {
+  max-width: 53.75rem;
+  text-transform: uppercase;
+}
+.hero__text {
+  max-width: 40rem;
+}
+
+@media screen and (width >= 700px) {
+  .hero {
+    min-height: 39rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__text {
+    font-size: 1.5rem;
+  }
+}
+.modules {
+  padding: 4rem 0.5rem;
+}
+.modules__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3.75rem;
+}
+.modules__item {
+  text-align: center;
+}
+.modules__item:nth-child(n+4):not(.modules__card) {
+  display: none;
+}
+.modules__item-header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+@media screen and (width >= 620px) {
+  .modules__item {
+    text-align: left;
+  }
+  .modules__item:nth-child(n+4):not(.modules__card) {
+    display: block;
+  }
+  .modules__item-header {
+    justify-content: start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

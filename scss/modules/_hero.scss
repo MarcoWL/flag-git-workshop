@@ -1,0 +1,38 @@
+@use '../utils/variables';
+
+.hero {
+	align-items: center;
+	background: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(123, 41, 121, 0.45)), url('/assets/hero.png');
+	background-size: cover;
+	background-position: center;
+	color: variables.$white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 24.5rem;
+	padding: 2rem;
+	text-align: center;
+
+	&__title {
+		max-width: 53.75rem;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		max-width: 40rem;
+	}
+}
+
+@media screen and (width >= 700px) {
+	.hero {
+		min-height: 39rem;
+
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}

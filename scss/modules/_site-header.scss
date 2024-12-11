@@ -1,0 +1,59 @@
+@use '../utils/variables';
+@use '../utils/reset';
+
+.site-header {
+	background-color: variables.$black;
+	padding: 1.25rem 2rem;
+
+	.container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.button {
+		display: none;
+	}
+}
+
+.main-nav {
+	display: none;
+
+	&__list {
+		align-items: center;
+		display: flex;
+		gap: 1.25rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		a {
+			color: variables.$white;
+			font-family: variables.$font-title;
+			font-weight: 700;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media screen and (width >= 700px) {
+	.site-header {
+		.button {
+			display: inline-block;
+		}
+	}
+}
+
+// Min-width: 1200px;
+@media screen and (width >= 1200px) {
+	.main-nav {
+		display: block;
+	}
+
+	.site-header {
+		.hamburger-menu {
+			display: none;
+		}
+	}
+}

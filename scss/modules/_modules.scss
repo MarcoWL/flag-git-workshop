@@ -1,0 +1,42 @@
+@use '../utils/variables';
+
+.modules {
+	padding: 4rem 0.5rem;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 3.75rem;
+	}
+
+	&__item {
+		text-align: center;
+
+		&:nth-child(n + 4):not(.modules__card) {
+			display: none;
+		}
+
+		&-header {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			gap: 1.25rem;
+		}
+	}
+}
+
+@media screen and (width >= 620px) {
+	.modules {
+		&__item {
+			text-align: left;
+
+			&:nth-child(n + 4):not(.modules__card) {
+				display: block;
+			}
+
+			&-header {
+				justify-content: start;
+			}
+		}
+	}
+}
